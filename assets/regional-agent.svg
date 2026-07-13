@@ -1,0 +1,87 @@
+<svg viewBox="0 0 800 1200" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Elmahrosa Global Day 2026 regional agent recruitment poster</title>
+<desc id="d">Multi-city AI security hackathon on September 15, 2026 across Alexandria, Riyadh and Amman, recruiting official regional agents.</desc>
+<rect width="800" height="1200" fill="#0E1626"/>
+<rect x="0" y="0" width="800" height="6" fill="#C9A24B"/>
+
+<text x="400" y="44" text-anchor="middle" font-size="13" letter-spacing="3" fill="#C9A24B">ELMAHROSA INTERNATIONAL · EGD2026</text>
+
+<g stroke="#C9A24B" stroke-width="1" opacity="0.55">
+  <line x1="400" y1="70" x2="160" y2="262"/>
+  <line x1="400" y1="70" x2="400" y2="262"/>
+  <line x1="400" y1="70" x2="640" y2="262"/>
+</g>
+<circle cx="400" cy="68" r="7" fill="#C9A24B"/>
+<circle cx="400" cy="68" r="13" fill="none" stroke="#C9A24B" stroke-width="1" opacity="0.5"/>
+
+<text x="400" y="150" text-anchor="middle" font-size="72" font-weight="bold" letter-spacing="2" fill="#F2EDE2">ELMAHROSA</text>
+<text x="400" y="222" text-anchor="middle" font-size="60" font-weight="bold" letter-spacing="2" fill="#F2EDE2">GLOBAL DAY <tspan fill="#C9A24B">2026</tspan></text>
+
+<circle cx="160" cy="262" r="4" fill="#2BB39A"/>
+<circle cx="400" cy="262" r="4" fill="#2BB39A"/>
+<circle cx="640" cy="262" r="4" fill="#2BB39A"/>
+<text x="160" y="286" text-anchor="middle" font-size="15" font-weight="bold" fill="#F2EDE2">ALEXANDRIA</text>
+<text x="400" y="286" text-anchor="middle" font-size="15" font-weight="bold" fill="#F2EDE2">RIYADH</text>
+<text x="640" y="286" text-anchor="middle" font-size="15" font-weight="bold" fill="#F2EDE2">AMMAN</text>
+
+<rect x="100" y="306" width="600" height="40" rx="4" fill="#C9A24B"/>
+<text x="400" y="332" text-anchor="middle" font-size="18" font-weight="bold" fill="#0E1626">SEPTEMBER 15, 2026 · ONE DAY · MORE CITIES JOINING</text>
+
+<text x="400" y="384" text-anchor="middle" font-size="19" fill="#F2EDE2">A coordinated multi-city AI Security Hackathon connecting developers,</text>
+<text x="400" y="410" text-anchor="middle" font-size="19" fill="#F2EDE2">researchers, and security professionals across MENA &amp; Africa</text>
+<text x="400" y="448" text-anchor="middle" font-size="22" font-weight="bold" letter-spacing="1" fill="#2BB39A">BECOME AN OFFICIAL REGIONAL AGENT</text>
+
+<g>
+  <rect x="48" y="478" width="166" height="120" rx="6" fill="#16213A" stroke="#C9A24B" stroke-width="1"/>
+  <text x="131" y="528" text-anchor="middle" font-size="32" font-weight="bold" fill="#C9A24B">2,000+</text>
+  <text x="131" y="554" text-anchor="middle" font-size="13" fill="#F2EDE2">developer reach</text>
+  <text x="131" y="572" text-anchor="middle" font-size="13" fill="#F2EDE2">target</text>
+
+  <rect x="226" y="478" width="166" height="120" rx="6" fill="#16213A" stroke="#C9A24B" stroke-width="1"/>
+  <text x="309" y="528" text-anchor="middle" font-size="32" font-weight="bold" fill="#C9A24B">13</text>
+  <text x="309" y="554" text-anchor="middle" font-size="13" fill="#F2EDE2">target countries</text>
+  <text x="309" y="572" text-anchor="middle" font-size="13" fill="#F2EDE2">MENA &amp; Africa</text>
+
+  <rect x="404" y="478" width="166" height="120" rx="6" fill="#16213A" stroke="#C9A24B" stroke-width="1"/>
+  <text x="487" y="528" text-anchor="middle" font-size="32" font-weight="bold" fill="#C9A24B">12 hrs</text>
+  <text x="487" y="554" text-anchor="middle" font-size="13" fill="#F2EDE2">simultaneous</text>
+  <text x="487" y="572" text-anchor="middle" font-size="13" fill="#F2EDE2">event</text>
+
+  <rect x="582" y="478" width="166" height="120" rx="6" fill="#16213A" stroke="#C9A24B" stroke-width="1"/>
+  <text x="665" y="528" text-anchor="middle" font-size="28" font-weight="bold" fill="#C9A24B">Rev share</text>
+  <text x="665" y="554" text-anchor="middle" font-size="13" fill="#F2EDE2">for regional</text>
+  <text x="665" y="572" text-anchor="middle" font-size="13" fill="#F2EDE2">agents</text>
+</g>
+
+<rect x="48" y="626" width="700" height="170" rx="6" fill="#16213A"/>
+<text x="72" y="660" font-size="17" font-weight="bold" letter-spacing="2" fill="#C9A24B">WHAT YOU RECEIVE AS AN AGENT</text>
+<text x="72" y="694" font-size="15" fill="#F2EDE2">•  Complete bilingual playbook (EN / AR)</text>
+<text x="72" y="722" font-size="15" fill="#F2EDE2">•  Branding kit &amp; event templates</text>
+<text x="72" y="750" font-size="15" fill="#F2EDE2">•  TEOS Sentinel demo access for challenges</text>
+<text x="420" y="694" font-size="15" fill="#F2EDE2">•  Dedicated organizer support</text>
+<text x="420" y="722" font-size="15" fill="#F2EDE2">•  Revenue share on local sponsorships</text>
+<text x="420" y="750" font-size="15" fill="#F2EDE2">•  Agent listing on elmahrosa.org</text>
+
+<rect x="48" y="824" width="340" height="186" rx="6" fill="#16213A"/>
+<text x="72" y="858" font-size="17" font-weight="bold" letter-spacing="2" fill="#C9A24B">YOUR COMMITMENTS</text>
+<text x="72" y="892" font-size="15" fill="#F2EDE2">•  Organize the local 12-hour event</text>
+<text x="72" y="920" font-size="15" fill="#F2EDE2">•  Secure a venue</text>
+<text x="72" y="948" font-size="15" fill="#F2EDE2">•  Recruit local developers</text>
+<text x="72" y="976" font-size="15" fill="#F2EDE2">•  Promote in your market</text>
+
+<rect x="408" y="824" width="340" height="186" rx="6" fill="#16213A"/>
+<text x="432" y="858" font-size="17" font-weight="bold" letter-spacing="2" fill="#C9A24B">THE AGENT WE SEEK</text>
+<text x="432" y="892" font-size="15" fill="#F2EDE2">•  Experienced event organizers</text>
+<text x="432" y="920" font-size="15" fill="#F2EDE2">•  Strong local tech networks</text>
+<text x="432" y="948" font-size="15" fill="#F2EDE2">•  Commitment to a safe, honest,</text>
+<text x="432" y="976" font-size="15" fill="#F2EDE2">    developer-first event</text>
+
+<text x="72" y="1048" font-size="14" font-weight="bold" letter-spacing="2" fill="#C9A24B">TARGET MARKETS</text>
+<text x="72" y="1074" font-size="13" fill="#F2EDE2">Egypt · Saudi Arabia · Jordan · Morocco · Tunisia · Algeria · UAE · Bahrain · Qatar · Nigeria · Kenya · Uganda · Pakistan</text>
+
+<rect x="48" y="1096" width="700" height="44" rx="6" fill="#C9A24B"/>
+<text x="400" y="1124" text-anchor="middle" font-size="17" font-weight="bold" fill="#0E1626">APPLY AS REGIONAL AGENT  —  ayman@elmahrosa.org  ·  elmahrosa.org</text>
+
+<text x="400" y="1166" text-anchor="middle" font-size="11" fill="#8A93A6">Elmahrosa International is a Registered Member of the Claude Partner Network by Anthropic. Membership denotes program participation only —</text>
+<text x="400" y="1182" text-anchor="middle" font-size="11" fill="#8A93A6">not endorsement, sponsorship, or investment by Anthropic. EGD2026 is an independent Elmahrosa International event. · Ayman Seif, Founder &amp; CEO</text>
+</svg>

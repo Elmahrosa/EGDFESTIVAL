@@ -1,0 +1,82 @@
+<svg viewBox="0 0 800 1200" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t2 d2">
+<title id="t2">Elmahrosa Global Day 2026 official agenda</title>
+<desc id="d2">Twelve-hour agenda for September 15, 2026, running 9am to 9pm local time in every host city.</desc>
+<rect width="800" height="1200" fill="#0E1626"/>
+<rect x="0" y="0" width="800" height="6" fill="#C9A24B"/>
+
+<text x="400" y="52" text-anchor="middle" font-size="13" letter-spacing="3" fill="#C9A24B">ELMAHROSA GLOBAL DAY 2026 · OFFICIAL AGENDA</text>
+<text x="400" y="116" text-anchor="middle" font-size="46" font-weight="bold" letter-spacing="1" fill="#F2EDE2">SEPTEMBER 15, 2026</text>
+<text x="400" y="152" text-anchor="middle" font-size="17" fill="#2BB39A">09:00 – 21:00 local time in every host city · Alexandria · Riyadh · Amman</text>
+
+<line x1="150" y1="196" x2="150" y2="940" stroke="#C9A24B" stroke-width="2"/>
+
+<g font-size="16">
+  <circle cx="150" cy="216" r="6" fill="#C9A24B"/>
+  <text x="60" y="222" font-size="17" font-weight="bold" fill="#C9A24B">09:00</text>
+  <text x="176" y="216" font-weight="bold" fill="#F2EDE2">Doors open &amp; registration</text>
+  <text x="176" y="238" font-size="14" fill="#8A93A6">Check-in, badges, team tables</text>
+
+  <circle cx="150" cy="282" r="6" fill="#C9A24B"/>
+  <text x="60" y="288" font-size="17" font-weight="bold" fill="#C9A24B">09:30</text>
+  <text x="176" y="282" font-weight="bold" fill="#F2EDE2">Opening ceremony — multi-city link-up</text>
+  <text x="176" y="304" font-size="14" fill="#8A93A6">Live video bridge across all host cities</text>
+
+  <circle cx="150" cy="348" r="6" fill="#C9A24B"/>
+  <text x="60" y="354" font-size="17" font-weight="bold" fill="#C9A24B">10:00</text>
+  <text x="176" y="348" font-weight="bold" fill="#F2EDE2">Keynote: AI security in MENA &amp; Africa</text>
+  <text x="176" y="370" font-size="14" fill="#8A93A6">Threat landscape, agent risks, why pre-execution defense matters</text>
+
+  <circle cx="150" cy="414" r="6" fill="#C9A24B"/>
+  <text x="60" y="420" font-size="17" font-weight="bold" fill="#C9A24B">10:30</text>
+  <text x="176" y="414" font-weight="bold" fill="#F2EDE2">Challenge brief &amp; team formation</text>
+  <text x="176" y="436" font-size="14" fill="#8A93A6">Tracks announced, rules, judging criteria</text>
+
+  <circle cx="150" cy="480" r="6" fill="#2BB39A"/>
+  <text x="60" y="486" font-size="17" font-weight="bold" fill="#2BB39A">11:00</text>
+  <text x="176" y="480" font-weight="bold" fill="#2BB39A">Hacking begins</text>
+  <text x="176" y="502" font-size="14" fill="#8A93A6">7 hours on the clock</text>
+
+  <circle cx="150" cy="546" r="6" fill="#C9A24B"/>
+  <text x="60" y="552" font-size="17" font-weight="bold" fill="#C9A24B">13:00</text>
+  <text x="176" y="546" font-weight="bold" fill="#F2EDE2">Lunch &amp; lightning talks</text>
+  <text x="176" y="568" font-size="14" fill="#8A93A6">10-minute community talks while teams eat</text>
+
+  <circle cx="150" cy="612" r="6" fill="#C9A24B"/>
+  <text x="60" y="618" font-size="17" font-weight="bold" fill="#C9A24B">15:00</text>
+  <text x="176" y="612" font-weight="bold" fill="#F2EDE2">Mentor hours &amp; mid-point check-in</text>
+  <text x="176" y="634" font-size="14" fill="#8A93A6">Technical mentors circulate, progress checkpoint</text>
+
+  <circle cx="150" cy="678" r="6" fill="#C9A24B"/>
+  <text x="60" y="684" font-size="17" font-weight="bold" fill="#C9A24B">18:00</text>
+  <text x="176" y="678" font-weight="bold" fill="#F2EDE2">Code freeze</text>
+  <text x="176" y="700" font-size="14" fill="#8A93A6">Submissions locked</text>
+
+  <circle cx="150" cy="744" r="6" fill="#C9A24B"/>
+  <text x="60" y="750" font-size="17" font-weight="bold" fill="#C9A24B">18:15</text>
+  <text x="176" y="744" font-weight="bold" fill="#F2EDE2">Local demos &amp; judging</text>
+  <text x="176" y="766" font-size="14" fill="#8A93A6">5-minute pitches, local jury scores each city's finalists</text>
+
+  <circle cx="150" cy="810" r="6" fill="#C9A24B"/>
+  <text x="60" y="816" font-size="17" font-weight="bold" fill="#C9A24B">19:30</text>
+  <text x="176" y="810" font-weight="bold" fill="#F2EDE2">Multi-city live finale</text>
+  <text x="176" y="832" font-size="14" fill="#8A93A6">City winners announced on the shared broadcast</text>
+
+  <circle cx="150" cy="876" r="6" fill="#C9A24B"/>
+  <text x="60" y="882" font-size="17" font-weight="bold" fill="#C9A24B">20:30</text>
+  <text x="176" y="876" font-weight="bold" fill="#F2EDE2">Closing &amp; networking</text>
+  <text x="176" y="898" font-size="14" fill="#8A93A6">Community photos, next steps for winning teams</text>
+
+  <circle cx="150" cy="940" r="6" fill="#2BB39A"/>
+  <text x="60" y="946" font-size="17" font-weight="bold" fill="#2BB39A">21:00</text>
+  <text x="176" y="940" font-weight="bold" fill="#2BB39A">End of EGD2026</text>
+</g>
+
+<rect x="48" y="980" width="700" height="120" rx="6" fill="#16213A"/>
+<text x="72" y="1012" font-size="15" font-weight="bold" letter-spacing="2" fill="#C9A24B">CHALLENGE TRACKS</text>
+<text x="72" y="1040" font-size="14" fill="#F2EDE2">1 — Prompt-injection defense   ·   2 — Agent guardrails &amp; pre-execution firewalls</text>
+<text x="72" y="1066" font-size="14" fill="#F2EDE2">3 — Secure tool &amp; MCP integrations   ·   4 — Open AI-security innovation</text>
+
+<rect x="48" y="1116" width="700" height="2" fill="#C9A24B"/>
+<text x="400" y="1148" text-anchor="middle" font-size="13" fill="#F2EDE2">ayman@elmahrosa.org · elmahrosa.org · Ayman Seif, Founder &amp; CEO</text>
+<text x="400" y="1172" text-anchor="middle" font-size="10" fill="#8A93A6">Elmahrosa International is a Registered Member of the Claude Partner Network by Anthropic — program participation only, not endorsement, sponsorship, or investment by Anthropic.</text>
+</svg>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EGD2026 Sponsorship — Rate Card & Partners | Elmahrosa</title>
+  <meta name="description" content="EGD2026 sponsorship: Presenting Partner ($25K), Gold City ($12K), Silver Track ($6K), Bronze ($2.5K), Prize ($5K), In-Kind. Reach 500+ AI security professionals across MENA. September 15, 2026." />
+  <meta name="keywords" content="EGD2026 sponsor, hackathon sponsorship, MENA tech events, AI security, partnership, Elmahrosa" />
+  <link rel="canonical" href="https://egd2026.elmahrosa.org/sponsors.html" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #06070A;
+      --bg2: #0E1626;
+      --panel: #16213A;
+      --gold: #C9A84C;
+      --gold2: #E8CC7A;
+      --teal: #14A085;
+      --teal2: #2BB39A;
+      --emerald: #10B981;
+      --white: #F2EDE2;
+      --muted: #8A93A6;
+      --border: rgba(201, 168, 76, 0.22);
+      --dim: rgba(255, 255, 255, 0.05);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: 'Cairo', system-ui, sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+    a { color: var(--gold2); text-decoration: none; transition: color 0.18s ease; }
+    a:hover { color: var(--gold); }
+    img { max-width: 100%; display: block; }
+    .wrap { width: min(1120px, 92vw); margin: 0 auto; }
+
+    /* NAV */
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1.2rem 1.5rem; border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; background: rgba(6, 7, 10, 0.94);
+      backdrop-filter: blur(10px); z-index: 10;
+    }
+    .brand {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;
+      letter-spacing: 0.14em; color: var(--gold); text-transform: uppercase;
+      font-weight: 700;
+    }
+    nav a { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.06em; }
+
+    /* MAIN */
+    section { padding: 4rem 0; }
+    .section-label {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.72rem;
+      letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold);
+      margin-bottom: 0.65rem;
+    }
+    h1 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 900;
+      margin: 1rem 0 0.75rem; line-height: 1.15;
+    }
+    h2 { font-size: 1.5rem; font-weight: 800; margin: 1.5rem 0 0.75rem; }
+    h3 { font-size: 1.2rem; font-weight: 800; margin: 1.25rem 0 0.5rem; }
+    .lead {
+      color: var(--muted); max-width: 62ch; margin-bottom: 1.5rem;
+      font-size: 1.02rem; line-height: 1.7;
+    }
+    .cta-row { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 2rem; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
+      padding: 0.75rem 1.35rem; border-radius: 6px; font-weight: 800;
+      font-size: 0.85rem; border: 1px solid transparent; cursor: pointer;
+      transition: 0.18s ease; font-family: inherit;
+    }
+    .btn-gold { background: var(--gold); color: #0E1626; }
+    .btn-gold:hover { background: var(--gold2); color: #0E1626; }
+    .btn-outline { background: transparent; border-color: var(--border); color: var(--white); }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+    .btn-teal { background: linear-gradient(135deg, var(--teal), #0D7377); color: #fff; }
+
+    /* RATE TABLE */
+    table {
+      width: 100%; border-collapse: collapse; font-size: 0.9rem;
+      margin: 2rem 0; background: var(--bg2); border-radius: 8px; overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    th, td { padding: 1rem 1.25rem; text-align: left; border-bottom: 1px solid var(--border); }
+    th {
+      background: var(--panel); color: var(--gold); font-weight: 800;
+      font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase;
+    }
+    tr:last-child td { border-bottom: none; }
+    td { color: var(--muted); }
+    td strong { color: var(--white); }
+    td .price { font-family: 'JetBrains Mono', monospace; color: var(--gold); font-weight: 700; }
+
+    /* TIER CARDS */
+    .tier-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;
+      margin: 2.5rem 0;
+    }
+    .tier-card {
+      background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+      padding: 2rem; position: relative;
+    }
+    .tier-card.featured {
+      border-color: var(--gold); box-shadow: 0 0 0 1px rgba(201,168,76,0.2);
+      transform: scale(1.02);
+    }
+    .tier-card.featured::before {
+      content: '★ FLAGSHIP'; position: absolute; top: -12px; left: 24px;
+      background: linear-gradient(135deg, var(--gold), var(--gold2)); color: #0E1626;
+      padding: 0.4rem 0.85rem; font-size: 0.7rem; font-weight: 800;
+      letter-spacing: 0.1em; border-radius: 999px;
+    }
+    .tier-label {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+    .tier-card h2 { margin-top: 0; }
+    .tier-price {
+      font-family: 'JetBrains Mono', monospace; font-size: 2rem; font-weight: 900;
+      color: var(--gold); margin: 0.75rem 0;
+    }
+    .tier-price small { font-size: 0.75rem; color: var(--muted); display: block; margin-top: 0.25rem; }
+    .tier-inventory { font-size: 0.8rem; color: var(--teal2); margin-bottom: 1.25rem; }
+    .tier-features { list-style: none; margin: 1.5rem 0; }
+    .tier-features li { margin: 0.5rem 0; padding-left: 1.5rem; position: relative; font-size: 0.95rem; color: var(--muted); }
+    .tier-features li::before { content: '✓'; position: absolute; left: 0; color: var(--emerald); font-weight: 800; }
+    .tier-cta { margin-top: 1.5rem; }
+    .tier-meta {
+      font-size: 0.8rem; color: var(--muted); margin-top: 1rem; padding-top: 1rem;
+      border-top: 1px solid rgba(201,168,76,0.15);
+    }
+
+    /* BENEFITS BREAKDOWN */
+    .benefits {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;
+      margin: 2.5rem 0;
+    }
+    .benefit-group {
+      background: var(--bg2); border: 1px solid var(--border); border-radius: 10px;
+      padding: 1.5rem;
+    }
+    .benefit-group h4 { font-size: 0.95rem; color: var(--gold); margin-bottom: 0.75rem; }
+    .benefit-group ul { list-style: none; margin: 0; }
+    .benefit-group li { font-size: 0.88rem; color: var(--muted); margin: 0.4rem 0; }
+    .benefit-group li::before { content: '◆ '; color: var(--teal); }
+    @media (max-width: 768px) {
+      .benefits { grid-template-columns: 1fr; }
+      .tier-card.featured { transform: scale(1); }
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 0;
+      margin-top: 4rem;
+    }
+    footer p { font-size: 0.9rem; color: var(--muted); margin: 0.35rem 0; }
+    footer p strong { color: var(--white); }
+    .legal { font-size: 0.78rem; color: var(--muted); margin-top: 1.5rem; line-height: 1.8; }
+
+    /* CONTACT BANNER */
+    .contact-banner {
+      background: linear-gradient(135deg, rgba(201,168,76,0.15), rgba(20,160,133,0.12));
+      border: 1px solid var(--border); border-radius: 12px;
+      padding: 2.5rem; text-align: center; margin: 3rem 0;
+    }
+    .contact-banner h2 { margin-top: 0; }
+    .contact-banner p { color: var(--muted); margin: 1rem 0 1.5rem; }
+
+    /* HONESTY CALLOUT */
+    .honesty-note {
+      background: rgba(16,185,129,0.08); border: 1px solid rgba(16,185,129,0.25);
+      border-radius: 10px; padding: 1.5rem; margin: 2rem 0;
+      font-size: 0.92rem; line-height: 1.7;
+    }
+    .honesty-note strong { color: var(--emerald); }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand">🔒 EGD2026 · Sponsorship</div>
+    <div style="display:flex;gap:1.5rem;">
+      <a href="index.html">Event home</a>
+      <a href="mailto:ayman@elmahrosa.org?subject=EGD2026%20Sponsorship%20Interest">Contact sales</a>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <section>
+      <p class="section-label">Sponsorship · Rate Card</p>
+      <h1>Be part of the Arab world's coordinated AI security hackathon</h1>
+      <p class="lead">
+        EGD2026 connects <strong>500+ developers, security researchers, policy professionals, and builders</strong>
+        across Alexandria, Riyadh, and Amman — live-bridged on September 15, 2026.
+        Sponsorship options below are structured for <strong>transparent value</strong>: guaranteed reach, measurable deliverables,
+        and honest ROI reporting.
+      </p>
+      <div class="cta-row">
+        <a href="mailto:ayman@elmahrosa.org?subject=EGD2026%20Sponsorship%20Inquiry" class="btn btn-gold">Request insertion order</a>
+        <a href="index.html#register" class="btn btn-outline">Back to event</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Sponsorship Tiers</h2>
+      <p class="lead">All sponsorship includes transparent reporting and genuine audience reach. No overclaiming.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>SKU</th>
+            <th>Tier</th>
+            <th>List Price</th>
+            <th>Inventory</th>
+            <th>Quick Profile</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>SPN-TITLE</strong></td>
+            <td><strong>Presenting Partner</strong></td>
+            <td class="price">$25,000</td>
+            <td>1</td>
+            <td>Title + keynote + all-city presence</td>
+          </tr>
+          <tr>
+            <td><strong>SPN-GOLD</strong></td>
+            <td><strong>Gold City Partner</strong></td>
+            <td class="price">$12,000</td>
+            <td>3 (1 per city recommended)</td>
+            <td>Stage branding + booth + tickets</td>
+          </tr>
+          <tr>
+            <td><strong>SPN-SILVER</strong></td>
+            <td><strong>Silver Track Sponsor</strong></td>
+            <td class="price">$6,000</td>
+            <td>4 (one per track)</td>
+            <td>Track naming rights + mentorship</td>
+          </tr>
+          <tr>
+            <td><strong>SPN-BRONZE</strong></td>
+            <td><strong>Bronze Community</strong></td>
+            <td class="price">$2,500</td>
+            <td>12 (unlimited roll)</td>
+            <td>Logo on site + email mentions</td>
+          </tr>
+          <tr>
+            <td><strong>SPN-PRIZE</strong></td>
+            <td><strong>Prize Purse Sponsor</strong></td>
+            <td class="price">$5,000</td>
+            <td>6</td>
+            <td>Prize category + judging seat</td>
+          </tr>
+          <tr>
+            <td><strong>SPN-INKIND</strong></td>
+            <td><strong>In-Kind / Venue / Cloud</strong></td>
+            <td class="price">Negotiated</td>
+            <td>Case-by-case</td>
+            <td>Fair market value swap</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Tier Details</h2>
+
+      <div class="tier-grid">
+        <!-- PRESENTING -->
+        <div class="tier-card featured">
+          <div class="tier-label">SPN-TITLE · Inventory: 1</div>
+          <h2>Presenting Partner</h2>
+          <div class="tier-price">$25,000</div>
+          <div class="tier-inventory">Exclusive (one per AI platform category)</div>
+          <ul class="tier-features">
+            <li>Title line on hero section & stage backs (all 3 cities)</li>
+            <li>5-min keynote slot on multi-city opening bridge</li>
+            <li>Logo: website hero, livestream graphics, email headers, program print</li>
+            <li>Dedicated sponsor booth/lounge at flagship city (or rotating presence)</li>
+            <li>8× Pro Builder + 12× Standard tickets (complimentary)</li>
+            <li>Co-present global grand prize (optional)</li>
+            <li>Post-event report: attendee reach, engagement metrics, compliance consent-gated</li>
+            <li>Case study interview (mutual approval required)</li>
+          </ul>
+          <p class="tier-meta">
+            <strong>Ideal for:</strong> Cloud platforms, cybersecurity suites, sovereign AI solutions, enterprise LLM providers,
+            telecom/fintech infrastructure.
+          </p>
+          <div class="tier-cta">
+            <a href="mailto:ayman@elmahrosa.org?subject=EGD2026%20Presenting%20Partner%20Interest" class="btn btn-gold">Get details →</a>
+          </div>
+        </div>
+
+        <!-- GOLD -->
+        <div class="tier-card">
+          <div class="tier-label">SPN-GOLD · Inventory: 3</div>
+          <h2>Gold City Partner</h2>
+          <div class="tier-price">$12,000</div>
+          <div class="tier-inventory">Per city (Alexandria, Riyadh, or Amman)</div>
+          <ul class="tier-features">
+            <li>City-level title rights (e.g., "Gold Partner — Alexandria Hub")</li>
+            <li>Stage branding & booth at your host city</li>
+            <li>4× Pro Builder + 6× Standard tickets</li>
+            <li>Mentor slot (1 expert on one track)</li>
+            <li>Logo on website, livestream, city materials</li>
+            <li>City-specific report (attendance, track participation)</li>
+            <li>Post-event networking call with organizers</li>
+          </ul>
+          <p class="tier-meta">
+            <strong>Ideal for:</strong> Regional tech leaders, local fintech platforms, regional security firms.
+          </p>
+          <div class="tier-cta">
+            <a href="mailto:ayman@elmahrosa.org?subject=EGD2026%20Gold%20City%20Partner" class="btn btn-outline">Inquire →</a>
+          </div>
+        </div>
+
+        <!-- SILVER -->
+        <div class="tier-card">
+          <div class="tier-label">SPN-SILVER · Inventory: 4</div>
+          <h2>Silver Track Sponsor</h2>
+          <div class="tier-price">$6,000</div>
+          <div class="tier-inventory">One per track (all cities use your branding)</div>
+          <ul class="tier-features">
+            <li>Track naming rights (e.g., "Powered by [Company] Track 01")</li>
+            <li>Logo on track materials (labs, slides, certificates)</li>
+            <li>2 mentorship seats on your sponsored track</li>
+            <li>2× Pro Builder + 4× Standard tickets</li>
+            <li>Logo on website & livestream</li>
+            <li>Track-level report (participant skills, outcomes)</li>
+            <li>Recognition in post-event case study</li>
+          </ul>
+          <p class="tier-meta">
+            <strong>Ideal for:</strong> Security tools, developer platforms, training/education providers.
+          </p>
+          <div class="tier-cta">
+            <a href="mailto:ayman@elmahrosa.org?subject=EGD2026%20Silver%20Track%20Sponsor" class="btn btn-outline">Inquire →</a>
+          </div>
+        </div>
+
+        <!-- BRONZE -->
+        <div class="tier-card">
+          <div class="tier-label">SPN-BRONZE · Inventory: 12</div>
+          <h2>Bronze Community</h2>
+          <div class="tier-price">$2,500</div>
+          <div class="tier-inventory">Unlimited roll (rolling availability)</div>
+          <ul class="tier-features">
+            <li>Logo on EGD2026 website (partners section)</li>
+            <li>Logo in email blast to 500+ registrants</li>
+            <li>2× Standard tickets</li>
+            <li>Social media mention pre/during event</li>
+            <li>Certificate of partnership</li>
+          </ul>
+          <p class="tier-meta">
+            <strong>Ideal for:</strong> SMBs, startups, community contributors, smaller regional players.
+          </p>
+          <div class="tier-cta">
+            <a href="mailto:ayman@elmahrosa.org?subject=EGD2026%20Bronze%20Community" class="btn btn-outline">Inquire →</a>
+          </div>
+        </div>
+
+        <!-- PRIZE -->
+        <div class="tier-card">
+          <div class="tier-label">SPN-PRIZE · Inventory: 6</div>
+          <h2>Prize Purse Sponsor</h2>
+          <div class="tier-price">$5,000</div>
+          <div class="tier-inventory">Define your prize category</div>
+          <ul class="tier-features">
+            <li>Named prize category (e.g., "AI Firewall Award")</li>
+            <li>Logo on prize materials & live announcements</li>
+            <li>1 seat on judging panel (optional expert participation)</li>
+            <li>Prize amount: $5K covers trophy/certification + social promotion</li>
+            <li>1× Pro Builder + 2× Standard tickets</li>
+            <li>Winner case study (with consent)</li>
+          </ul>
+          <p class="tier-meta">
+            <strong>Ideal for:</strong> Product vendors, recruitment-focused orgs, solutions providers.
+          </p>
+          <div class="tier-cta">
+            <a href="mailto:ayman@elmahrosa.org?subject=EGD2026%20Prize%20Purse%20Sponsor" class="btn btn-outline">Inquire →</a>
+          </div>
+        </div>
+
+        <!-- IN-KIND -->
+        <div class="tier-card">
+          <div class="tier-label">SPN-INKIND</div>
+          <h2>In-Kind / Venue / Cloud</h2>
+          <div class="tier-price">Negotiated</div>
+          <div class="tier-inventory">Case-by-case basis</div>
+          <ul class="tier-features">
+            <li>Venue contribution (3-city coordination)</li>
+            <li>Cloud credits / infrastructure</li>
+            <li>Software licenses for hackathon</li>
+            <li>Catering / logistics</li>
+            <li>Recognition equal to cash tier value</li>
+            <li>Flexible negotiation</li>
+          </ul>
+          <p class="tier-meta">
+            <strong>Contact:</strong> <strong>ayman@elmahrosa.org</strong> to discuss fair market valuation.
+          </p>
+          <div class="tier-cta">
+            <a href="mailto:ayman@elmahrosa.org?subject=EGD2026%20In-Kind%20Sponsorship" class="btn btn-outline">Let's talk →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>What's Included Across All Tiers</h2>
+      <div class="benefits">
+        <div class="benefit-group">
+          <h4>Audience & Reach</h4>
+          <ul>
+            <li>Target: 500+ developers, researchers, founders</li>
+            <li>Geographic: MENA + Africa, diaspora tech</li>
+            <li>Post-event list (opt-in, GDPR-compliant)</li>
+            <li>Live-stream to global audience</li>
+          </ul>
+        </div>
+        <div class="benefit-group">
+          <h4>Transparency & Reporting</h4>
+          <ul>
+            <li>Real attendance numbers (verified check-in)</li>
+            <li>Demographic breakdown</li>
+            <li>Engagement metrics (Q&A, track attendance)</li>
+            <li>Post-event satisfaction survey results</li>
+          </ul>
+        </div>
+        <div class="benefit-group">
+          <h4>Branding & Assets</h4>
+          <ul>
+            <li>High-res logo placement (print + digital)</li>
+            <li>Social media credit (Twitter, LinkedIn, Instagram)</li>
+            <li>Email blast inclusion</li>
+            <li>Website backlink from sponsor page</li>
+          </ul>
+        </div>
+        <div class="benefit-group">
+          <h4>Partnership Value</h4>
+          <ul>
+            <li>Alignment with Anthropic Academy pathway</li>
+            <li>Claude Partner Network credibility</li>
+            <li>TEOS Sentinel governance framework exposure</li>
+            <li>Case study & testimonial opportunity</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="honesty-note">
+        <strong>🛡️ Honesty First:</strong> We don't overclaim audience reach or engagement. Every number reported is from verified sources:
+        registered attendees, check-in counts, survey responses. We distinguish between community reach (500+ Telegram, social followers)
+        and active event participation (actual September 15 attendees). Sponsorships are real partnerships with genuine value
+        — not pay-to-play visibility schemes. Your brand gets exposed to genuine builders, and you help fund an independent,
+        quality event. That's the deal.
+      </div>
+    </section>
+
+    <section>
+      <div class="contact-banner">
+        <h2>Ready to sponsor?</h2>
+        <p>
+          We're building something special for MENA tech. Let's talk about how your organization can be part of it.
+        </p>
+        <a href="mailto:ayman@elmahrosa.org?subject=EGD2026%20Sponsorship%20Inquiry" class="btn btn-gold">Get in touch →</a>
+        <p style="margin-top:1rem;font-size:0.85rem;">
+          <strong>Contact:</strong> ayman@elmahrosa.org | <a href="index.html">Back to event</a>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <p><strong>EGD2026 · Elmahrosa Global Day 2026</strong> · September 15 · #EGD2026</p>
+      <p>Organized by <strong>Elmahrosa International</strong> · Founder: Ayman Seif · Claude Partner Network Registered Member</p>
+      <p>
+        <a href="index.html">Event home</a> ·
+        <a href="https://elmahrosa.org">elmahrosa.org</a> ·
+        <a href="https://cpn.elmahrosa.org">cpn.elmahrosa.org</a> ·
+        <a href="mailto:ayman@elmahrosa.org">ayman@elmahrosa.org</a>
+      </p>
+      <div class="legal">
+        <strong>Program Status:</strong> EGD2026 is an independent event organized by Elmahrosa International,
+        a Registered Member of the Claude Partner Network by Anthropic.
+        <strong>CPN membership = program participation only, not Anthropic endorsement or investment.</strong>
+        Anthropic Academy credentials are earned by individuals completing Anthropic's official requirements.
+        Elmahrosa facilitates training and learning infrastructure. No Anthropic IP is redistributed.
+        <strong>Honesty discipline enforced:</strong> all reach/attendance claims verified; no overclaiming of Anthropic affiliation.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

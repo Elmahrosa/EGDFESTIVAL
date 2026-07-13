@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elmahrosa Global Day 2026 | Annual MENA & Africa Technology Innovation Festival</title>
+  <meta name="description" content="Elmahrosa Global Day 2026: The annual technology innovation festival for MENA & Africa. AI • Healthcare • Civic Tech • Blockchain • Startups • Open Source. Sept 15, 2026. Alexandria • Riyadh • Amman • Expanding to 18 nations." />
+  <meta name="keywords" content="Elmahrosa Global Day, EGD2026, innovation festival, MENA technology, AI summit, startup showcase, hackathon, Africa tech, open source, healthcare innovation" />
+  <meta property="og:title" content="Elmahrosa Global Day 2026 — MENA & Africa Innovation Festival" />
+  <meta property="og:description" content="One Day. Many Cities. One MENA & Africa AI Community. Sept 15, 2026." />
+  <meta property="og:url" content="https://egd2026.elmahrosa.org/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://egd2026.elmahrosa.org/assets/hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://egd2026.elmahrosa.org/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #06070A;
+      --bg2: #0E1626;
+      --panel: #16213A;
+      --gold: #C9A84C;
+      --gold2: #E8CC7A;
+      --teal: #14A085;
+      --teal2: #2BB39A;
+      --emerald: #10B981;
+      --white: #F2EDE2;
+      --muted: #8A93A6;
+      --border: rgba(201, 168, 76, 0.22);
+      --dim: rgba(255, 255, 255, 0.05);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: 'Cairo', system-ui, sans-serif;
+      line-height: 1.68;
+      overflow-x: hidden;
+    }
+    a { color: var(--gold2); text-decoration: none; transition: color 0.18s ease; }
+    a:hover { color: var(--gold); }
+    img { max-width: 100%; display: block; }
+    .wrap { width: min(1120px, 92vw); margin: 0 auto; }
+
+    /* NAV */
+    nav {
+      position: fixed; inset: 0 0 auto 0; z-index: 100;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 1.5rem;
+      background: rgba(6, 7, 10, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .nav-brand {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem; letter-spacing: 0.14em;
+      color: var(--gold); text-transform: uppercase; font-weight: 700;
+    }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; align-items: center; flex-wrap: wrap; }
+    .nav-links a {
+      color: rgba(255,255,255,0.45); font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
+      padding: 0.75rem 1.35rem; border-radius: 6px; font-weight: 800;
+      font-size: 0.85rem; border: 1px solid transparent; cursor: pointer;
+      transition: 0.18s ease; font-family: inherit;
+    }
+    .btn-gold { background: var(--gold); color: #0E1626; }
+    .btn-gold:hover { background: var(--gold2); color: #0E1626; }
+    .btn-outline { background: transparent; border-color: var(--border); color: var(--white); }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+    /* HERO */
+    .hero {
+      position: relative; min-height: 100vh; padding: 8rem 0 4rem;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% 0%, rgba(20,160,133,0.12), transparent 60%),
+        radial-gradient(ellipse 60% 40% at 80% 20%, rgba(201,168,76,0.08), transparent 50%),
+        var(--bg);
+      overflow: hidden;
+    }
+    .hero::before {
+      content: ''; position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 20%, transparent 75%);
+      pointer-events: none;
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-family: 'JetBrains Mono', monospace; font-size: 0.72rem;
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal2);
+      border: 1px solid rgba(43,179,154,0.35); padding: 0.4rem 0.85rem; border-radius: 999px;
+      background: rgba(20,160,133,0.08); margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-size: clamp(2.6rem, 7vw, 4.4rem); line-height: 1.08; font-weight: 900;
+      letter-spacing: -0.02em; max-width: 22ch; margin-bottom: 1rem;
+    }
+    .hero h1 span { color: var(--gold); }
+    .hero-sub {
+      margin-bottom: 1.2rem; max-width: 58ch; color: var(--muted); font-size: 1.12rem; line-height: 1.75;
+    }
+    .hero-sub strong { color: var(--white); font-weight: 700; }
+    .tagline {
+      font-size: 1.35rem; font-weight: 800; line-height: 1.4; max-width: 50ch;
+      background: linear-gradient(135deg, var(--gold), var(--teal2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin: 1.5rem 0;
+    }
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 0.85rem; margin-top: 2rem; }
+
+    /* HUBS GRID */
+    .hubs {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.95rem;
+      margin-top: 3rem; max-width: 680px;
+    }
+    .hub {
+      background: var(--dim); border: 1px solid var(--border); border-radius: 10px;
+      padding: 1.25rem; text-align: center;
+    }
+    .hub-flag { font-size: 1.6rem; }
+    .hub-name { font-weight: 800; font-size: 1.1rem; margin-top: 0.25rem; }
+    .hub-time { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--gold); margin-top: 0.35rem; }
+
+    .stats {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.95rem;
+      margin-top: 2.5rem;
+    }
+    .stat {
+      background: var(--bg2); border: 1px solid var(--border); border-radius: 10px;
+      padding: 1.25rem; text-align: center;
+    }
+    .stat b {
+      display: block; font-size: 1.75rem; color: var(--gold); font-weight: 900;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .stat span { font-size: 0.8rem; color: var(--muted); }
+
+    /* SECTIONS */
+    section { padding: 5rem 0; }
+    .section-label {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.72rem;
+      letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+    h2 {
+      font-size: clamp(1.8rem, 3.8vw, 2.6rem); font-weight: 900; line-height: 1.15;
+      margin-bottom: 0.85rem;
+    }
+    h3 { font-size: 1.3rem; font-weight: 800; margin: 1.75rem 0 0.75rem; }
+    .lead { color: var(--muted); max-width: 65ch; margin-bottom: 2.25rem; font-size: 1.05rem; line-height: 1.75; }
+
+    /* CARDS GRID */
+    .cards-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    .card {
+      background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+      padding: 1.75rem;
+    }
+    .card-icon { font-size: 2.2rem; margin-bottom: 0.75rem; }
+    .card h3 { margin-top: 0; }
+    .card p { color: var(--muted); font-size: 0.95rem; line-height: 1.7; }
+
+    /* TRACKS GRID */
+    .tracks-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem;
+      margin-top: 2.5rem;
+    }
+    .track-item {
+      background: var(--bg2); border: 1px solid var(--border); border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .track-num { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--gold); font-weight: 700; }
+    .track-item h4 { font-size: 1.1rem; margin: 0.5rem 0 0.65rem; }
+    .track-item p { color: var(--muted); font-size: 0.9rem; line-height: 1.65; }
+
+    /* AUDIENCE PILLS */
+    .audience-pills {
+      display: flex; flex-wrap: wrap; gap: 0.75rem;
+      margin-top: 2rem;
+    }
+    .pill {
+      display: inline-block; background: rgba(20,160,133,0.12); border: 1px solid rgba(20,160,133,0.25);
+      padding: 0.55rem 1rem; border-radius: 999px; font-size: 0.9rem; color: var(--teal2); font-weight: 700;
+    }
+
+    /* TIMELINE */
+    .timeline {
+      position: relative; margin: 3rem 0;
+      padding-left: 2rem;
+    }
+    .timeline::before {
+      content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+      width: 2px; background: linear-gradient(180deg, var(--gold), var(--teal), transparent);
+    }
+    .timeline-item {
+      margin-bottom: 2.5rem; position: relative;
+    }
+    .timeline-item::before {
+      content: ''; position: absolute; left: -2.55rem; top: 0.35rem;
+      width: 12px; height: 12px; background: var(--gold); border-radius: 50%;
+      border: 3px solid var(--bg);
+    }
+    .timeline-item h4 { font-size: 1.15rem; color: var(--gold); margin-bottom: 0.35rem; }
+    .timeline-item p { color: var(--muted); font-size: 0.95rem; }
+
+    /* ECOSYSTEM */
+    .ecosystem-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    .ecosystem-card {
+      background: linear-gradient(135deg, rgba(20,160,133,0.15), rgba(201,168,76,0.1));
+      border: 1px solid rgba(20,160,133,0.25); border-radius: 12px;
+      padding: 1.75rem;
+    }
+    .ecosystem-card .icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .ecosystem-card h4 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .ecosystem-card p { color: var(--muted); font-size: 0.92rem; line-height: 1.65; }
+
+    /* REGIONAL EXPANSION MAP */
+    .expansion-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.85rem;
+      margin-top: 2.5rem;
+    }
+    .region-item {
+      background: var(--dim); border: 1px solid var(--border); border-radius: 8px;
+      padding: 0.95rem; text-align: center; font-size: 0.9rem; font-weight: 600;
+    }
+    .region-item.active { background: rgba(20,160,133,0.15); border-color: var(--teal); }
+
+    /* REGISTRATION TYPES */
+    .reg-types {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
+      margin-top: 2.5rem;
+    }
+    .reg-type {
+      background: var(--bg2); border: 1px solid var(--border); border-radius: 10px;
+      padding: 1.2rem; text-align: center;
+    }
+    .reg-type .type-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+    .reg-type .type-name { font-weight: 800; font-size: 0.95rem; }
+
+    /* LEARNING JOURNEY */
+    .journey-steps {
+      display: grid; grid-template-columns: repeat(7, 1fr); gap: 1rem;
+      margin-top: 2.5rem; position: relative;
+    }
+    .journey-steps::before {
+      content: ''; position: absolute; left: 0; right: 0; top: 24px;
+      height: 2px; background: linear-gradient(90deg, var(--gold), var(--teal), var(--emerald), transparent);
+      z-index: 0;
+    }
+    .step {
+      background: var(--panel); border: 2px solid var(--border); border-radius: 50%;
+      width: 60px; height: 60px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      position: relative; z-index: 1;
+      margin: 0 auto;
+    }
+    .step-label { font-size: 0.75rem; text-align: center; margin-top: 0.85rem; font-weight: 700; color: var(--gold); }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 3.5rem 0;
+      margin-top: 5rem;
+    }
+    footer p { font-size: 0.92rem; color: var(--muted); margin: 0.4rem 0; }
+    footer p strong { color: var(--white); }
+    .legal { font-size: 0.8rem; color: var(--muted); margin-top: 1.75rem; line-height: 1.85; }
+
+    @media (max-width: 768px) {
+      .hubs { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .tracks-grid { grid-template-columns: 1fr; }
+      .ecosystem-grid { grid-template-columns: 1fr; }
+      .expansion-grid { grid-template-columns: repeat(2, 1fr); }
+      .reg-types { grid-template-columns: repeat(2, 1fr); }
+      .journey-steps { grid-template-columns: repeat(4, 1fr); gap: 0.5rem; }
+      .step { width: 50px; height: 50px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-brand">🌍 Elmahrosa Global Day</div>
+    <div class="nav-links">
+      <a href="#mission">Mission</a>
+      <a href="#tracks">Tracks</a>
+      <a href="#program">Program</a>
+      <a href="#audience">Audience</a>
+      <a href="#register">Join</a>
+      <a href="sponsors.html">Sponsor</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">⚡ September 15, 2026</p>
+      <h1><span>Elmahrosa</span> Global Day 2026</h1>
+      <p class="hero-sub">
+        <strong>A Coordinated Multi-City AI Innovation & Security Event Across MENA & Africa</strong>
+      </p>
+      <div class="tagline">One Day. Many Cities. One MENA & Africa AI Community.</div>
+      <p class="hero-sub">
+        Building Trusted AI Across MENA & Africa.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#register" class="btn btn-gold">Join the Festival</a>
+        <a href="#mission" class="btn btn-outline">Learn More</a>
+      </div>
+
+      <div class="hubs">
+        <div class="hub">
+          <div class="hub-flag">🇪🇬</div>
+          <div class="hub-name">Alexandria</div>
+          <div class="hub-time">UTC+2 · 09:00</div>
+        </div>
+        <div class="hub">
+          <div class="hub-flag">🇸🇦</div>
+          <div class="hub-name">Riyadh</div>
+          <div class="hub-time">UTC+3 · 10:00</div>
+        </div>
+        <div class="hub">
+          <div class="hub-flag">🇯🇴</div>
+          <div class="hub-name">Amman</div>
+          <div class="hub-time">UTC+3 · 10:00</div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <b>9</b>
+          <span>Innovation Tracks</span>
+        </div>
+        <div class="stat">
+          <b>3</b>
+          <span>Founding Hubs</span>
+        </div>
+        <div class="stat">
+          <b>18+</b>
+          <span>Regional Expansion</span>
+        </div>
+        <div class="stat">
+          <b>14</b>
+          <span>Audience Types</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mission">
+    <div class="wrap">
+      <p class="section-label">Our Mission</p>
+      <h2>Build Trusted AI Across MENA & Africa</h2>
+      <p class="lead">
+        Elmahrosa Global Day is the annual technology innovation festival bringing together builders, researchers, 
+        educators, and entrepreneurs across MENA and Africa. We create space for real innovation: secure AI, 
+        healthcare technology, civic applications, sustainable startups, and open-source solutions shaped by community values.
+      </p>
+
+      <h3>What EGD2026 Represents</h3>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">🏛️</div>
+          <h3>Annual Summit</h3>
+          <p>The premier gathering for AI innovation, governance, and security across MENA & Africa.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🛠️</div>
+          <h3>Innovation Festival</h3>
+          <p>Workshops, hackathons, showcases, and hands-on labs for all skill levels.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🚀</div>
+          <h3>Startup Launchpad</h3>
+          <p>Pitch your idea. Meet investors. Accelerate your vision with community support.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📚</div>
+          <h3>Learning Center</h3>
+          <p>Certifications, mentorship, and continuous education for career growth.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🌐</div>
+          <h3>Community Hub</h3>
+          <p>Connect with peers, leaders, and experts. Build lasting relationships.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔐</div>
+          <h3>Security Lab</h3>
+          <p>AI safety, governance frameworks, and ethical technology practices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tracks">
+    <div class="wrap">
+      <p class="section-label">Innovation Tracks</p>
+      <h2>Nine Technical Pathways</h2>
+      <p class="lead">
+        Choose your specialization. All tracks run in parallel across the three founding hubs with live bridge interaction.
+      </p>
+
+      <div class="tracks-grid">
+        <div class="track-item">
+          <div class="track-num">Track 01</div>
+          <h4>AI Security</h4>
+          <p>Frontier model safety, prompt defense, governance frameworks, and deterministic policy layers.</p>
+        </div>
+        <div class="track-item">
+          <div class="track-num">Track 02</div>
+          <h4>Artificial Intelligence</h4>
+          <p>Generative AI applications, LLM integration, RAG systems, and production ML pipelines.</p>
+        </div>
+        <div class="track-item">
+          <div class="track-num">Track 03</div>
+          <h4>Healthcare Innovation</h4>
+          <p>AI for medical diagnostics, health records, telehealth platforms, and clinical research.</p>
+        </div>
+        <div class="track-item">
+          <div class="track-num">Track 04</div>
+          <h4>Civic Technology</h4>
+          <p>Government systems, policy tech, transparency, voting platforms, and citizen engagement.</p>
+        </div>
+        <div class="track-item">
+          <div class="track-num">Track 05</div>
+          <h4>Blockchain & Web3</h4>
+          <p>Smart contracts, DeFi, tokenomics, governance tokens, and decentralized applications.</p>
+        </div>
+        <div class="track-item">
+          <div class="track-num">Track 06</div>
+          <h4>Startup Innovation</h4>
+          <p>Pitch preparation, MVP development, fundraising, team building, and go-to-market strategy.</p>
+        </div>
+        <div class="track-item">
+          <div class="track-num">Track 07</div>
+          <h4>Student Innovation</h4>
+          <p>First projects, learning paths, university partnerships, and entry-level opportunities.</p>
+        </div>
+        <div class="track-item">
+          <div class="track-num">Track 08</div>
+          <h4>Cloud & DevOps</h4>
+          <p>Infrastructure, containerization, Kubernetes, CI/CD, and scalable system design.</p>
+        </div>
+        <div class="track-item">
+          <div class="track-num">Track 09</div>
+          <h4>Open Source</h4>
+          <p>Community projects, contribution guides, maintenance, and sustainable open-source models.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="program">
+    <div class="wrap">
+      <p class="section-label">Global Program</p>
+      <h2>One Day. Multiple Formats.</h2>
+      <p class="lead">
+        September 15, 2026 features a coordinated program across three founding hubs with simultaneous keynotes, 
+        parallel workshops, a 12-hour hackathon, startup demos, and live networking.
+      </p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <h4>Opening Ceremony</h4>
+          <p>Welcome keynotes from regional leaders and Elmahrosa founders. Live bridge across all three hubs.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Workshops & Labs</h4>
+          <p>Hands-on learning in all 9 tracks. Led by domain experts and certified mentors.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Innovation Hackathon</h4>
+          <p>12-hour build session. Teams compete across tracks. Mentorship available throughout.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Startup Demo Zone</h4>
+          <p>Founders pitch ideas. Meet investors, VCs, and strategic partners.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Networking & Expo</h4>
+          <p>Partner booths, sponsor interactions, community gathering, 1-on-1 mentoring.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Awards & Closing</h4>
+          <p>Celebrate winners. Announce regional agent partners. Close the 2026 festival.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="audience">
+    <div class="wrap">
+      <p class="section-label">Community</p>
+      <h2>Built for Everyone</h2>
+      <p class="lead">
+        Whether you're a student, developer, researcher, founder, educator, or enthusiast — there's a place for you at EGD2026.
+      </p>
+
+      <h3>Who's Welcome</h3>
+      <div class="audience-pills">
+        <span class="pill">👨‍🎓 Students</span>
+        <span class="pill">💻 Developers</span>
+        <span class="pill">🔬 Researchers</span>
+        <span class="pill">🚀 Founders</span>
+        <span class="pill">🏫 Universities</span>
+        <span class="pill">🏥 Healthcare</span>
+        <span class="pill">👨‍💼 Government</span>
+        <span class="pill">⭐ Startups</span>
+        <span class="pill">📖 Open Source</span>
+        <span class="pill">🌟 Sponsors</span>
+        <span class="pill">🤝 Partners</span>
+        <span class="pill">💰 Investors</span>
+        <span class="pill">🗺️ Regional Organizers</span>
+        <span class="pill">📢 Media</span>
+      </div>
+
+      <h3>Registration Types</h3>
+      <p class="lead">Choose how you participate:</p>
+      <div class="reg-types">
+        <div class="reg-type">
+          <div class="type-icon">👁️</div>
+          <div class="type-name">Visitor</div>
+        </div>
+        <div class="reg-type">
+          <div class="type-icon">🎓</div>
+          <div class="type-name">Student</div>
+        </div>
+        <div class="reg-type">
+          <div class="type-icon">💻</div>
+          <div class="type-name">Developer</div>
+        </div>
+        <div class="reg-type">
+          <div class="type-icon">🚀</div>
+          <div class="type-name">Startup</div>
+        </div>
+        <div class="reg-type">
+          <div class="type-icon">🏫</div>
+          <div class="type-name">University</div>
+        </div>
+        <div class="reg-type">
+          <div class="type-icon">🤝</div>
+          <div class="type-name">Volunteer</div>
+        </div>
+        <div class="reg-type">
+          <div class="type-icon">👨‍🏫</div>
+          <div class="type-name">Mentor</div>
+        </div>
+        <div class="reg-type">
+          <div class="type-icon">⚖️</div>
+          <div class="type-name">Judge</div>
+        </div>
+        <div class="reg-type">
+          <div class="type-icon">🗺️</div>
+          <div class="type-name">Regional Organizer</div>
+        </div>
+        <div class="reg-type">
+          <div class="type-icon">🤝</div>
+          <div class="type-name">Partner</div>
+        </div>
+        <div class="reg-type">
+          <div class="type-icon">💎</div>
+          <div class="type-name">Sponsor</div>
+        </div>
+        <div class="reg-type">
+          <div class="type-icon">📸</div>
+          <div class="type-name">Media</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="section-label">Learning Journey</p>
+      <h2>Discover. Learn. Build. Launch. Network. Grow.</h2>
+      <p class="lead">
+        EGD2026 is designed as a continuous journey, not a single event. Your growth continues long after September 15.
+      </p>
+
+      <div class="journey-steps">
+        <div>
+          <div class="step" style="border-color: var(--gold); background: rgba(201,168,76,0.15);">
+            <span style="font-weight: 800; color: var(--gold); font-size: 1.2rem;">🔍</span>
+          </div>
+          <div class="step-label">Discover</div>
+        </div>
+        <div>
+          <div class="step" style="border-color: var(--teal); background: rgba(20,160,133,0.15);">
+            <span style="font-weight: 800; color: var(--teal); font-size: 1.2rem;">📚</span>
+          </div>
+          <div class="step-label">Learn</div>
+        </div>
+        <div>
+          <div class="step" style="border-color: var(--emerald); background: rgba(16,185,129,0.15);">
+            <span style="font-weight: 800; color: var(--emerald); font-size: 1.2rem;">🛠️</span>
+          </div>
+          <div class="step-label">Build</div>
+        </div>
+        <div>
+          <div class="step" style="border-color: var(--gold); background: rgba(201,168,76,0.15);">
+            <span style="font-weight: 800; color: var(--gold); font-size: 1.2rem;">🚀</span>
+          </div>
+          <div class="step-label">Launch</div>
+        </div>
+        <div>
+          <div class="step" style="border-color: var(--teal); background: rgba(20,160,133,0.15);">
+            <span style="font-weight: 800; color: var(--teal); font-size: 1.2rem;">🤝</span>
+          </div>
+          <div class="step-label">Network</div>
+        </div>
+        <div>
+          <div class="step" style="border-color: var(--emerald); background: rgba(16,185,129,0.15);">
+            <span style="font-weight: 800; color: var(--emerald); font-size: 1.2rem;">📈</span>
+          </div>
+          <div class="step-label">Grow</div>
+        </div>
+        <div>
+          <div class="step" style="border-color: var(--gold); background: rgba(201,168,76,0.15);">
+            <span style="font-weight: 800; color: var(--gold); font-size: 1.2rem;">∞</span>
+          </div>
+          <div class="step-label">Continue</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="section-label">Elmahrosa Ecosystem</p>
+      <h2>One Platform. Infinite Possibilities.</h2>
+      <p class="lead">
+        EGD2026 is the annual flagship event of Elmahrosa International. Discover the full ecosystem of products, 
+        programs, and communities.
+      </p>
+
+      <div class="ecosystem-grid">
+        <div class="ecosystem-card">
+          <div class="icon">🌍</div>
+          <h4>Elmahrosa Global Day</h4>
+          <p>Annual innovation festival bringing builders across MENA & Africa together.</p>
+        </div>
+        <div class="ecosystem-card">
+          <div class="icon">🏥</div>
+          <h4>UnityCare Platform</h4>
+          <p>Healthcare innovation system connecting patients, providers, and researchers.</p>
+        </div>
+        <div class="ecosystem-card">
+          <div class="icon">🔒</div>
+          <h4>TEOS Sentinel</h4>
+          <p>AI Execution Firewall. Deterministic governance for frontier models.</p>
+        </div>
+        <div class="ecosystem-card">
+          <div class="icon">🤖</div>
+          <h4>Elmahrosa AI Builder</h4>
+          <p>Tools and frameworks for building secure, trusted AI applications.</p>
+        </div>
+        <div class="ecosystem-card">
+          <div class="icon">📖</div>
+          <h4>Open Source Community</h4>
+          <p>Public repositories, developer tools, and community-driven innovation.</p>
+        </div>
+        <div class="ecosystem-card">
+          <div class="icon">🌟</div>
+          <h4>Community Programs</h4>
+          <p>Mentorship, learning paths, certifications, and career development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="section-label">Expansion Strategy</p>
+      <h2>Founding Hubs → Regional Expansion</h2>
+      <p class="lead">
+        We start with three founding hubs in Alexandria, Riyadh, and Amman. 
+        We're expanding to 18+ nations across MENA and Africa by 2027.
+      </p>
+
+      <h3>Founding Hubs (2026)</h3>
+      <div class="expansion-grid" style="margin-bottom: 2rem;">
+        <div class="region-item active">Egypt 🇪🇬</div>
+        <div class="region-item active">Saudi Arabia 🇸🇦</div>
+        <div class="region-item active">Jordan 🇯🇴</div>
+        <div class="region-item" style="opacity: 0.5; font-size: 0.8rem;">[Reserved]</div>
+      </div>
+
+      <h3>Regional Expansion (2026-2027)</h3>
+      <div class="expansion-grid">
+        <div class="region-item">Morocco 🇲🇦</div>
+        <div class="region-item">Tunisia 🇹🇳</div>
+        <div class="region-item">Algeria 🇩🇿</div>
+        <div class="region-item">Libya 🇱🇾</div>
+        <div class="region-item">UAE 🇦🇪</div>
+        <div class="region-item">Qatar 🇶🇦</div>
+        <div class="region-item">Bahrain 🇧🇭</div>
+        <div class="region-item">Kuwait 🇰🇼</div>
+        <div class="region-item">Oman 🇴🇲</div>
+        <div class="region-item">Nigeria 🇳🇬</div>
+        <div class="region-item">Kenya 🇰🇪</div>
+        <div class="region-item">Uganda 🇺🇬</div>
+        <div class="region-item">Ethiopia 🇪🇹</div>
+        <div class="region-item">Ghana 🇬🇭</div>
+        <div class="region-item">South Africa 🇿🇦</div>
+        <div class="region-item">Pakistan 🇵🇰</div>
+        <div class="region-item">Bangladesh 🇧🇩</div>
+        <div class="region-item">Indonesia 🇮🇩</div>
+      </div>
+
+      <p style="margin-top: 2rem; color: var(--muted); font-size: 0.95rem;">
+        <strong>Regional Agent Model:</strong> We partner with local leaders in each region to organize 12-hour local events 
+        connected to the global festival. 50/50 revenue split. Full organizational support provided.
+      </p>
+    </div>
+  </section>
+
+  <section id="register">
+    <div class="wrap">
+      <p class="section-label">Join EGD2026</p>
+      <h2>Register for the Festival</h2>
+      <p class="lead">
+        Choose your registration type above. Whether you're attending, building, mentoring, or organizing — 
+        we have a way for you to participate.
+      </p>
+
+      <div style="background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; margin-top: 2rem; text-align: center;">
+        <p style="color: var(--muted); margin-bottom: 1.5rem;">Registration tiers, ticket pricing, and detailed information:</p>
+        <a href="index.html#register" class="btn btn-gold">View Registration Options →</a>
+      </div>
+
+      <div style="background: linear-gradient(135deg, rgba(201,168,76,0.15), rgba(20,160,133,0.12)); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; margin-top: 2rem; text-align: center;">
+        <h3 style="margin-top: 0;">Interested in Sponsoring?</h3>
+        <p style="color: var(--muted); margin: 1rem 0 1.5rem;">Reach 500+ innovation leaders and builders across MENA & Africa.</p>
+        <a href="sponsors.html" class="btn btn-outline">View Sponsorship Program →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p><strong>Elmahrosa Global Day 2026</strong> · #EGD2026 · September 15, 2026</p>
+      <p>Organized by <strong>Elmahrosa International</strong> · Founder & Chief Architect: <strong>Ayman Seif</strong></p>
+      <p>Founding Hubs: Alexandria 🇪🇬 · Riyadh 🇸🇦 · Amman 🇯🇴 · Expanding to 18+ nations</p>
+      <p style="margin-top: 1rem;">
+        <a href="https://elmahrosa.org">elmahrosa.org</a> ·
+        <a href="https://cpn.elmahrosa.org">cpn.elmahrosa.org</a> ·
+        <a href="mailto:ayman@elmahrosa.org">ayman@elmahrosa.org</a>
+      </p>
+      <div class="legal">
+        <strong>About Elmahrosa Global Day:</strong> EGD is the annual innovation festival of Elmahrosa International. 
+        Elmahrosa is a Registered Member of the Claude Partner Network by Anthropic (program participation only — not endorsement). 
+        EGD2026 is an independent event. All content, programs, and initiatives are created and owned by Elmahrosa International. 
+        Certificates and credentials mentioned are earned by individuals completing official requirements.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
