@@ -50,6 +50,10 @@
       font-weight: 700;
     }
     nav a { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.06em; }
+    .lang-switch { display: inline-flex; gap: 0.3rem; margin-left: 0.5rem; }
+    .lang-switch a { font-size: 0.7rem; padding: 0.12rem 0.35rem; border: 1px solid var(--border); border-radius: 4px; color: var(--muted); text-transform: uppercase; }
+    .lang-switch a:hover { color: var(--gold); border-color: var(--gold); }
+    .lang-switch a.active { color: var(--gold); border-color: var(--gold); background: rgba(201,168,76,0.1); }
 
     /* MAIN */
     section { padding: 4rem 0; }
@@ -186,9 +190,15 @@
 <body>
   <nav>
     <div class="brand">🔒 EGD2026 · Sponsorship</div>
-    <div style="display:flex;gap:1.5rem;">
+    <div style="display:flex;gap:1rem;align-items:center;flex-wrap:wrap;">
       <a href="index.html">Event home</a>
       <a href="mailto:ayman@elmahrosa.org?subject=EGD2026%20Sponsorship%20Interest">Contact sales</a>
+      <div class="lang-switch">
+        <a href="#" class="active">EN</a>
+        <a href="#">AR</a>
+        <a href="#">ID</a>
+        <a href="#">FR</a>
+      </div>
     </div>
   </nav>
 

@@ -65,6 +65,10 @@
       letter-spacing: 0.06em; text-transform: uppercase;
     }
     .nav-links a:hover { color: var(--gold); }
+    .lang-switch { display: flex; gap: 0.4rem; margin-left: 0.5rem; }
+    .lang-switch a { font-size: 0.72rem; padding: 0.15rem 0.4rem; border: 1px solid var(--border); border-radius: 4px; color: var(--muted); text-transform: uppercase; }
+    .lang-switch a:hover { color: var(--gold); border-color: var(--gold); }
+    .lang-switch a.active { color: var(--gold); border-color: var(--gold); background: rgba(201,168,76,0.1); }
     .btn {
       display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
       padding: 0.75rem 1.35rem; border-radius: 6px; font-weight: 800;
@@ -309,6 +313,12 @@
       <a href="#audience">Audience</a>
       <a href="#register">Join</a>
       <a href="sponsors.html">Sponsor</a>
+      <div class="lang-switch">
+        <a href="#" class="active">EN</a>
+        <a href="#">AR</a>
+        <a href="#">ID</a>
+        <a href="#">FR</a>
+      </div>
     </div>
   </nav>
 
