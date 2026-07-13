@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parrainage EGD2026 — Barème & Partenaires | Elmahrosa</title>
+  <meta name="description" content="Parrainage EGD2026 : Partenaire Présentant (25 000 $), Ville Or (12 000 $), Parcours Argent (6 000 $), Bronze (2 500 $), Prix (5 000 $), En nature. Touchez plus de 500 professionnels de la sécurité IA à travers l'AMN. 15 septembre 2026." />
+  <meta name="keywords" content="parrainage EGD2026, hackathon parrainage, événements tech AMN, sécurité IA, partenariat, Elmahrosa" />
+  <link rel="canonical" href="https://egd2026.elmahrosa.org/sponsors-fr.html" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #06070A;
+      --bg2: #0E1626;
+      --panel: #16213A;
+      --gold: #C9A84C;
+      --gold2: #E8CC7A;
+      --teal: #14A085;
+      --teal2: #2BB39A;
+      --emerald: #10B981;
+      --white: #F2EDE2;
+      --muted: #8A93A6;
+      --border: rgba(201, 168, 76, 0.22);
+      --dim: rgba(255, 255, 255, 0.05);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: 'Cairo', system-ui, sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+    a { color: var(--gold2); text-decoration: none; transition: color 0.18s ease; }
+    a:hover { color: var(--gold); }
+    img { max-width: 100%; display: block; }
+    .wrap { width: min(1120px, 92vw); margin: 0 auto; }
+
+    /* NAV */
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1.2rem 1.5rem; border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; background: rgba(6, 7, 10, 0.94);
+      backdrop-filter: blur(10px); z-index: 10;
+    }
+    .brand {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;
+      letter-spacing: 0.14em; color: var(--gold); text-transform: uppercase;
+      font-weight: 700;
+    }
+    nav a { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.06em; }
+    .lang-switch { display: inline-flex; gap: 0.3rem; margin-left: 0.5rem; }
+    .lang-switch a { font-size: 0.7rem; padding: 0.12rem 0.35rem; border: 1px solid var(--border); border-radius: 4px; color: var(--muted); text-transform: uppercase; }
+    .lang-switch a:hover { color: var(--gold); border-color: var(--gold); }
+    .lang-switch a.active { color: var(--gold); border-color: var(--gold); background: rgba(201,168,76,0.1); }
+
+    /* MAIN */
+    section { padding: 4rem 0; }
+    .section-label {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.72rem;
+      letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold);
+      margin-bottom: 0.65rem;
+    }
+    h1 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 900;
+      margin: 1rem 0 0.75rem; line-height: 1.15;
+    }
+    h2 { font-size: 1.5rem; font-weight: 800; margin: 1.5rem 0 0.75rem; }
+    h3 { font-size: 1.2rem; font-weight: 800; margin: 1.25rem 0 0.5rem; }
+    .lead {
+      color: var(--muted); max-width: 62ch; margin-bottom: 1.5rem;
+      font-size: 1.02rem; line-height: 1.7;
+    }
+    .cta-row { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 2rem; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
+      padding: 0.75rem 1.35rem; border-radius: 6px; font-weight: 800;
+      font-size: 0.85rem; border: 1px solid transparent; cursor: pointer;
+      transition: 0.18s ease; font-family: inherit;
+    }
+    .btn-gold { background: var(--gold); color: #0E1626; }
+    .btn-gold:hover { background: var(--gold2); color: #0E1626; }
+    .btn-outline { background: transparent; border-color: var(--border); color: var(--white); }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+    .btn-teal { background: linear-gradient(135deg, var(--teal), #0D7377); color: #fff; }
+
+    /* RATE TABLE */
+    table {
+      width: 100%; border-collapse: collapse; font-size: 0.9rem;
+      margin: 2rem 0; background: var(--bg2); border-radius: 8px; overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    th, td { padding: 1rem 1.25rem; text-align: left; border-bottom: 1px solid var(--border); }
+    th {
+      background: var(--panel); color: var(--gold); font-weight: 800;
+      font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase;
+    }
+    tr:last-child td { border-bottom: none; }
+    td { color: var(--muted); }
+    td strong { color: var(--white); }
+    td .price { font-family: 'JetBrains Mono', monospace; color: var(--gold); font-weight: 700; }
+
+    /* TIER CARDS */
+    .tier-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;
+      margin: 2.5rem 0;
+    }
+    .tier-card {
+      background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+      padding: 2rem; position: relative;
+    }
+    .tier-card.featured {
+      border-color: var(--gold); box-shadow: 0 0 0 1px rgba(201,168,76,0.2);
+      transform: scale(1.02);
+    }
+    .tier-card.featured::before {
+      content: '★ PHARE'; position: absolute; top: -12px; left: 24px;
+      background: linear-gradient(135deg, var(--gold), var(--gold2)); color: #0E1626;
+      padding: 0.4rem 0.85rem; font-size: 0.7rem; font-weight: 800;
+      letter-spacing: 0.1em; border-radius: 999px;
+    }
+    .tier-label {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+    .tier-card h2 { margin-top: 0; }
+    .tier-price {
+      font-family: 'JetBrains Mono', monospace; font-size: 2rem; font-weight: 900;
+      color: var(--gold); margin: 0.75rem 0;
+    }
+    .tier-price small { font-size: 0.75rem; color: var(--muted); display: block; margin-top: 0.25rem; }
+    .tier-inventory { font-size: 0.8rem; color: var(--teal2); margin-bottom: 1.25rem; }
+    .tier-features { list-style: none; margin: 1.5rem 0; }
+    .tier-features li { margin: 0.5rem 0; padding-left: 1.5rem; position: relative; font-size: 0.95rem; color: var(--muted); }
+    .tier-features li::before { content: '✓'; position: absolute; left: 0; color: var(--emerald); font-weight: 800; }
+    .tier-cta { margin-top: 1.5rem; }
+    .tier-meta {
+      font-size: 0.8rem; color: var(--muted); margin-top: 1rem; padding-top: 1rem;
+      border-top: 1px solid rgba(201,168,76,0.15);
+    }
+
+    /* BENEFITS BREAKDOWN */
+    .benefits {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;
+      margin: 2.5rem 0;
+    }
+    .benefit-group {
+      background: var(--bg2); border: 1px solid var(--border); border-radius: 10px;
+      padding: 1.5rem;
+    }
+    .benefit-group h4 { font-size: 0.95rem; color: var(--gold); margin-bottom: 0.75rem; }
+    .benefit-group ul { list-style: none; margin: 0; }
+    .benefit-group li { font-size: 0.88rem; color: var(--muted); margin: 0.4rem 0; }
+    .benefit-group li::before { content: '◆ '; color: var(--teal); }
+    @media (max-width: 768px) {
+      .benefits { grid-template-columns: 1fr; }
+      .tier-card.featured { transform: scale(1); }
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 0;
+      margin-top: 4rem;
+    }
+    footer p { font-size: 0.9rem; color: var(--muted); margin: 0.35rem 0; }
+    footer p strong { color: var(--white); }
+    .legal { font-size: 0.78rem; color: var(--muted); margin-top: 1.5rem; line-height: 1.8; }
+
+    /* CONTACT BANNER */
+    .contact-banner {
+      background: linear-gradient(135deg, rgba(201,168,76,0.15), rgba(20,160,133,0.12));
+      border: 1px solid var(--border); border-radius: 12px;
+      padding: 2.5rem; text-align: center; margin: 3rem 0;
+    }
+    .contact-banner h2 { margin-top: 0; }
+    .contact-banner p { color: var(--muted); margin: 1rem 0 1.5rem; }
+
+    /* HONESTY CALLOUT */
+    .honesty-note {
+      background: rgba(16,185,129,0.08); border: 1px solid rgba(16,185,129,0.25);
+      border-radius: 10px; padding: 1.5rem; margin: 2rem 0;
+      font-size: 0.92rem; line-height: 1.7;
+    }
+    .honesty-note strong { color: var(--emerald); }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand">🔒 EGD2026 · Parrainage</div>
+    <div style="display:flex;gap:1rem;align-items:center;flex-wrap:wrap;">
+      <a href="index.html">Accueil de l'événement</a>
+      <a href="mailto:ayman@elmahrosa.org?subject=EGD2026%20Sponsorship%20Interest">Contacter les ventes</a>
+      <div class="lang-switch">
+        <a href="sponsors.html">EN</a>
+        <a href="sponsors-ar.html">AR</a>
+        <a href="sponsors-id.html">ID</a>
+        <a href="#" class="active">FR</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <section>
+      <p class="section-label">Parrainage · Barème</p>
+      <h1>Rejoignez le hackathon coordonné de sécurité IA du monde arabe</h1>
+      <p class="lead">
+        EGD2026 connecte <strong>plus de 500 développeurs, chercheurs en sécurité, professionnels des politiques et bâtisseurs</strong>
+        à travers Alexandrie, Riyad et Amman — en liaison directe le 15 septembre 2026.
+        Les options de parrainage ci-dessous sont structurées pour une <strong>valeur transparente</strong> : portée garantie, livrables mesurables,
+        et rapports d'ROI honnêtes.
+      </p>
+      <div class="cta-row">
+        <a href="sponsor-apply.html" class="btn btn-gold">Postuler maintenant →</a>
+        <a href="index.html" class="btn btn-outline">Retour à l'événement</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Niveaux de parrainage</h2>
+      <p class="lead">Tout parrainage inclut un reporting transparent et une portée réelle auprès du public. Aucune surestimation.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>SKU</th>
+            <th>Niveau</th>
+            <th>Prix affiché</th>
+            <th>Inventaire</th>
+            <th>Profil rapide</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>SPN-TITLE</strong></td>
+            <td><strong>Partenaire Présentant</strong></td>
+            <td class="price">25 000 $</td>
+            <td>1</td>
+            <td>Titre + keynote + présence toutes villes</td>
+          </tr>
+          <tr>
+            <td><strong>SPN-GOLD</strong></td>
+            <td><strong>Partenaire Ville Or</strong></td>
+            <td class="price">12 000 $</td>
+            <td>3 (1 par ville recommandé)</td>
+            <td>Branding scène + stand + billets</td>
+          </tr>
+          <tr>
+            <td><strong>SPN-SILVER</strong></td>
+            <td><strong>Sponsor Parcours Argent</strong></td>
+            <td class="price">6 000 $</td>
+            <td>4 (un par parcours)</td>
+            <td>Droits de nommage du parcours + mentorat</td>
+          </tr>
+          <tr>
+            <td><strong>SPN-BRONZE</strong></td>
+            <td><strong>Bronze Communauté</strong></td>
+            <td class="price">2 500 $</td>
+            <td>12 (disponibilité continue)</td>
+            <td>Logo sur le site + mentions par e-mail</td>
+          </tr>
+          <tr>
+            <td><strong>SPN-PRIZE</strong></td>
+            <td><strong>Sponsor Cagnotte Prix</strong></td>
+            <td class="price">5 000 $</td>
+            <td>6</td>
+            <td>Catégorie de prix + siège de jury</td>
+          </tr>
+          <tr>
+            <td><strong>SPN-INKIND</strong></td>
+            <td><strong>En nature / Lieu / Cloud</strong></td>
+            <td class="price">Négocié</td>
+            <td>Au cas par cas</td>
+            <td>Échange à valeur marché équitable</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Détails des niveaux</h2>
+
+      <div class="tier-grid">
+        <!-- PRESENTING -->
+        <div class="tier-card featured">
+          <div class="tier-label">SPN-TITLE · Inventaire : 1</div>
+          <h2>Partenaire Présentant</h2>
+          <div class="tier-price">25 000 $</div>
+          <div class="tier-inventory">Exclusif (un par catégorie de plateforme IA)</div>
+          <ul class="tier-features">
+            <li>Ligne titre sur la section héros et les scènes (3 villes)</li>
+            <li>Créneau keynote de 5 min lors du pont d'ouverture multi-ville</li>
+            <li>Logo : héros du site, graphiques du direct, en-têtes e-mail, programme imprimé</li>
+            <li>Stand/salon dédié dans la ville phare (ou présence tournante)</li>
+            <li>8× Pro Builder + 12× Standard (compliments)</li>
+            <li>Co-présentation du grand prix mondial (optionnel)</li>
+            <li>Rapport post-événement : portée, métriques d'engagement, consentement conforme RGPD</li>
+            <li>Entretien étude de cas (approbation mutuelle requise)</li>
+          </ul>
+          <p class="tier-meta">
+            <strong>Idéal pour :</strong> plateformes cloud, suites de cybersécurité, solutions d'IA souveraine, fournisseurs d'LLM d'entreprise,
+            infrastructures télécom/fintech.
+          </p>
+          <div class="tier-cta">
+            <a href="https://dodo.pe/egd2026-presenting-partner-6052726" target="_blank" class="btn btn-gold">Acheter 25 000 $ →</a>
+          </div>
+        </div>
+
+        <!-- GOLD -->
+        <div class="tier-card">
+          <div class="tier-label">SPN-GOLD · Inventaire : 3</div>
+          <h2>Partenaire Ville Or</h2>
+          <div class="tier-price">12 000 $</div>
+          <div class="tier-inventory">Par ville (Alexandrie, Riyad ou Amman)</div>
+          <ul class="tier-features">
+            <li>Droits de titre au niveau ville (ex. : « Partenaire Or — Hub Alexandrie »)</li>
+            <li>Branding scène et stand dans votre ville hôte</li>
+            <li>4× Pro Builder + 6× Standard</li>
+            <li>Créneau mentor (1 expert sur un parcours)</li>
+            <li>Logo sur le site, le direct, les supports de ville</li>
+            <li>Rapport spécifique à la ville (fréquentation, participation aux parcours)</li>
+            <li>Appel de réseautage post-événement avec les organisateurs</li>
+          </ul>
+          <p class="tier-meta">
+            <strong>Idéal pour :</strong> leaders tech régionaux, plateformes fintech locales, sociétés de sécurité régionales.
+          </p>
+          <div class="tier-cta">
+            <a href="https://dodo.pe/egd2026-gold-city-partner-6052725" target="_blank" class="btn btn-outline">Acheter 12 000 $ →</a>
+          </div>
+        </div>
+
+        <!-- SILVER -->
+        <div class="tier-card">
+          <div class="tier-label">SPN-SILVER · Inventaire : 4</div>
+          <h2>Sponsor Parcours Argent</h2>
+          <div class="tier-price">6 000 $</div>
+          <div class="tier-inventory">Un par parcours (toutes les villes utilisent votre branding)</div>
+          <ul class="tier-features">
+            <li>Droits de nommage du parcours (ex. : « Parcours 01 par [Entreprise] »)</li>
+            <li>Logo sur les supports du parcours (labs, diapositives, certificats)</li>
+            <li>2 places de mentorat sur votre parcours parrainé</li>
+            <li>2× Pro Builder + 4× Standard</li>
+            <li>Logo sur le site et le direct</li>
+            <li>Rapport au niveau du parcours (compétences, résultats des participants)</li>
+            <li>Reconnaissance dans l'étude de cas post-événement</li>
+          </ul>
+          <p class="tier-meta">
+            <strong>Idéal pour :</strong> outils de sécurité, plateformes pour développeurs, prestataires de formation.
+          </p>
+          <div class="tier-cta">
+            <a href="https://dodo.pe/egd2026-silver-track-sponsor-6052723" target="_blank" class="btn btn-outline">Acheter 6 000 $ →</a>
+          </div>
+        </div>
+
+        <!-- BRONZE -->
+        <div class="tier-card">
+          <div class="tier-label">SPN-BRONZE · Inventaire : 12</div>
+          <h2>Bronze Communauté</h2>
+          <div class="tier-price">2 500 $</div>
+          <div class="tier-inventory">Disponibilité continue (roll infini)</div>
+          <ul class="tier-features">
+            <li>Logo sur le site EGD2026 (section partenaires)</li>
+            <li>Logo dans l'e-mail envoyé à 500+ inscrits</li>
+            <li>2× Standard</li>
+            <li>Mention sur les réseaux sociaux avant/durant l'événement</li>
+            <li>Certificat de partenariat</li>
+          </ul>
+          <p class="tier-meta">
+            <strong>Idéal pour :</strong> PME, startups, contributeurs communautaires, acteurs régionaux plus petits.
+          </p>
+          <div class="tier-cta">
+            <a href="https://dodo.pe/egd2026-bronze-sponsor-6052722" target="_blank" class="btn btn-outline">Acheter 2 500 $ →</a>
+          </div>
+        </div>
+
+        <!-- PRIZE -->
+        <div class="tier-card">
+          <div class="tier-label">SPN-PRIZE · Inventaire : 6</div>
+          <h2>Sponsor Cagnotte Prix</h2>
+          <div class="tier-price">5 000 $</div>
+          <div class="tier-inventory">Définissez votre catégorie de prix</div>
+          <ul class="tier-features">
+            <li>Catégorie de prix nommée (ex. : « Prix AI Firewall »)</li>
+            <li>Logo sur les supports de prix et les annonces en direct</li>
+            <li>1 place au jury (participation experte optionnelle)</li>
+            <li>Montant du prix : 5 000 $ couvre le trophée/certification + la promotion sociale</li>
+            <li>1× Pro Builder + 2× Standard</li>
+            <li>Étude de cas du gagnant (avec consentement)</li>
+          </ul>
+          <p class="tier-meta">
+            <strong>Idéal pour :</strong> fournisseurs de produits, organisations de recrutement, prestataires de solutions.
+          </p>
+          <div class="tier-cta">
+            <a href="https://dodo.pe/egd2026-prize-purse-sponsor-6052724" target="_blank" class="btn btn-outline">Acheter 5 000 $ →</a>
+          </div>
+        </div>
+
+        <!-- IN-KIND -->
+        <div class="tier-card">
+          <div class="tier-label">SPN-INKIND</div>
+          <h2>En nature / Lieu / Cloud</h2>
+          <div class="tier-price">Négocié</div>
+          <div class="tier-inventory">Au cas par cas</div>
+          <ul class="tier-features">
+            <li>Contribution au lieu (coordination 3 villes)</li>
+            <li>Crédits cloud / infrastructure</li>
+            <li>Licences logicielles pour le hackathon</li>
+            <li>Restauration / logistique</li>
+            <li>Reconnaissance équivalente à la valeur du niveau en espèces</li>
+            <li>Négociation flexible</li>
+          </ul>
+          <p class="tier-meta">
+            <strong>Contact :</strong> <strong>ayman@elmahrosa.org</strong> pour discuter de la valorisation marché équitable.
+          </p>
+          <div class="tier-cta">
+            <a href="mailto:ayman@elmahrosa.org?subject=EGD2026%20In-Kind%20Sponsorship" class="btn btn-outline">En parler →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Ce qui est inclus dans tous les niveaux</h2>
+      <div class="benefits">
+        <div class="benefit-group">
+          <h4>Public et portée</h4>
+          <ul>
+            <li>Cible : 500+ développeurs, chercheurs, fondateurs</li>
+            <li>Géographique : AMN + Afrique, diaspora tech</li>
+            <li>Liste post-événement (opt-in, conforme RGPD)</li>
+            <li>Diffusion en direct à un public mondial</li>
+          </ul>
+        </div>
+        <div class="benefit-group">
+          <h4>Transparence et reporting</h4>
+          <ul>
+            <li>Chiffres réels de fréquentation (check-in vérifié)</li>
+            <li>Répartition démographique</li>
+            <li>Métriques d'engagement (Q&R, participation aux parcours)</li>
+            <li>Résultats de l'enquête de satisfaction post-événement</li>
+          </ul>
+        </div>
+        <div class="benefit-group">
+          <h4>Branding et supports</h4>
+          <ul>
+            <li>Placement du logo haute résolution (imprimé + numérique)</li>
+            <li>Crédit réseaux sociaux (Twitter, LinkedIn, Instagram)</li>
+            <li>Insertion dans les e-mails de masse</li>
+            <li>Lien retour depuis la page partenaires</li>
+          </ul>
+        </div>
+        <div class="benefit-group">
+          <h4>Valeur partenariat</h4>
+          <ul>
+            <li>Alignement avec la voie Anthropic Academy</li>
+            <li>Crédibilité du Claude Partner Network</li>
+            <li>Exposition au cadre de gouvernance TEOS Sentinel</li>
+            <li>Opportunité d'étude de cas et de témoignage</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="honesty-note">
+        <strong>🛡️ Honnêteté d'abord :</strong> Nous ne surestimons ni la portée du public ni l'engagement. Chaque chiffre provient de sources vérifiées :
+        participants inscrits, comptages de check-in, réponses aux enquêtes. Nous distinguons entre la portée communautaire (500+ sur Telegram, abonnés réseaux sociaux)
+        et la participation active à l'événement (participants réels du 15 septembre). Les parrainages sont de véritables partenariats avec une valeur authentique
+        — pas des schémas de visibilité pay-to-play. Votre marque est exposée à de vrais bâtisseurs, et vous contribuez au financement d'un événement indépendant
+        et de qualité. Voilà l'accord.
+      </div>
+    </section>
+
+    <section>
+      <div class="contact-banner">
+        <h2>Prêt à parrainer ?</h2>
+        <p>
+          Nous construisons quelque chose de spécial pour la tech en AMN. Parlons de la façon dont votre organisation peut en faire partie.
+        </p>
+        <a href="sponsor-apply.html" class="btn btn-gold">Postuler pour un parrainage →</a>
+        <p style="margin-top:1rem;font-size:0.85rem;">
+          <strong>Contact :</strong> ayman@elmahrosa.org | <a href="index.html">Retour à l'événement</a>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <p><strong>EGD2026 · Elmahrosa Global Day 2026</strong> · 15 septembre · #EGD2026</p>
+      <p>Organisé par <strong>Elmahrosa International</strong> · Fondateur : Ayman Seif · Membre enregistré du Claude Partner Network</p>
+      <p>
+        <a href="index.html">Accueil de l'événement</a> ·
+        <a href="https://elmahrosa.org">elmahrosa.org</a> ·
+        <a href="https://cpn.elmahrosa.org">cpn.elmahrosa.org</a> ·
+        <a href="mailto:ayman@elmahrosa.org">ayman@elmahrosa.org</a>
+      </p>
+      <div class="legal">
+        <strong>Statut du programme :</strong> EGD2026 est un événement indépendant organisé par Elmahrosa International,
+        membre enregistré du Claude Partner Network par Anthropic.
+        <strong>L'adhésion CPN = participation au programme uniquement, pas un soutien ni un investissement d'Anthropic.</strong>
+        Les accréditations Anthropic Academy sont obtenues par les individus qui remplissent les exigences officielles d'Anthropic.
+        Elmahrosa facilite la formation et les infrastructures d'apprentissage. Aucune propriété intellectuelle d'Anthropic n'est redistribuée.
+        <strong>Rigueur d'honnêteté appliquée :</strong> toutes les affirmations de portée/fréquentation vérifiées ; aucune surestimation de l'affiliation à Anthropic.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
