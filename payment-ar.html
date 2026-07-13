@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EGD2026 — الدفع | التذاكر والرعاية</title>
+  <meta name="description" content="EGD2026: سجّل الآن. التذاكر: العادي $25، المحترف $75. الرعاية: برونزي، فضي، جائزة، ذهبي، الشريك الرئيسي." />
+  <link rel="canonical" href="https://egd2026.elmahrosa.org/payment-ar.html" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#0b1020; --card:#121a30; --text:#eef2ff; --muted:#aab3d1; --gold:#C9A84C; --border:rgba(255,255,255,.15); }
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+    body { margin:0; font-family:'Tajawal','Cairo',sans-serif; background:var(--bg); color:var(--text); }
+    nav {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:1rem 1.5rem; position:sticky; top:0; z-index:100;
+      background:rgba(6,7,10,0.96); backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(255,255,255,.05);
+    }
+    .brand { font-size:0.75rem; letter-spacing:0.14em; color:var(--gold); text-transform:uppercase; font-weight:700; text-decoration:none; }
+    .nav-right { display:flex; gap:1.2rem; align-items:center; }
+    .nav-right a { font-size:0.75rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:rgba(255,255,255,.45); text-decoration:none; }
+    .nav-right a:hover { color:var(--gold); }
+    .lang-nav { display:flex; gap:0.3rem; }
+    .lang-nav a { font-size:0.7rem; padding:0.12rem 0.35rem; border:1px solid var(--border); border-radius:4px; color:var(--muted); text-transform:uppercase; text-decoration:none; }
+    .lang-nav a:hover { color:var(--gold); border-color:var(--gold); }
+    .lang-nav a.active { color:var(--gold); border-color:var(--gold); background:rgba(201,168,76,0.1); }
+
+    .wrap { max-width:1200px; margin:40px auto; padding:0 16px; }
+    h1 { margin:0 0 8px; font-size:28px; }
+    .sub { color:var(--muted); margin-bottom:24px; font-size:0.95rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; }
+    .tier {
+      border-radius:16px; padding:16px; position:relative; overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,.25); border:1px solid rgba(255,255,255,.15);
+    }
+    .tier h3 { margin:0 0 6px; font-size:18px; }
+    .price { font-size:24px; font-weight:700; margin-bottom:14px; }
+    .actions { display:flex; gap:8px; flex-wrap:wrap; }
+    .btn {
+      border:0; border-radius:10px; padding:10px 12px; font-weight:600; cursor:pointer;
+      text-decoration:none; display:inline-block; font-family:inherit;
+    }
+    .pay { background:#fff; color:#111; }
+    .qr { background:rgba(255,255,255,.16); color:#fff; }
+    .qrbox { margin-top:12px; display:none; background:rgba(0,0,0,.25); padding:10px; border-radius:10px; }
+    .qrbox img { width:170px; height:170px; background:#fff; padding:8px; border-radius:8px; }
+    .qrbox p { margin:8px 0 0; font-size:12px; color:var(--muted); word-break:break-all; }
+    .standard   { background:linear-gradient(135deg,#1d4ed8,#0f172a); }
+    .pro        { background:linear-gradient(135deg,#2563eb,#0ea5e9); }
+    .bronze     { background:linear-gradient(135deg,#92400e,#f59e0b); }
+    .silver     { background:linear-gradient(135deg,#64748b,#cbd5e1); color:#111; }
+    .silver .qr { color:#111; }
+    .prize      { background:linear-gradient(135deg,#7c3aed,#ec4899); }
+    .gold       { background:linear-gradient(135deg,#b45309,#fde047); color:#111; }
+    .gold .qr  { color:#111; }
+    .presenting { background:linear-gradient(135deg,#111827,#f8fafc); color:#111; }
+    .presenting .qr { color:#111; }
+
+    footer { text-align:center; padding:2rem; font-size:0.85rem; color:var(--muted); border-top:1px solid rgba(255,255,255,.05); margin-top:3rem; }
+    footer a { color:var(--gold); text-decoration:none; }
+    @media(max-width:600px){ h1{font-size:22px;} }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index-ar.html" class="brand">EGD2026</a>
+    <div class="nav-right">
+      <a href="register-ar.html">تسجيل</a>
+      <a href="sponsors-ar.html">الرعاة</a>
+      <div class="lang-nav">
+        <a href="payment.html">EN</a>
+        <a href="payment-ar.html" class="active">AR</a>
+        <a href="payment-id.html">ID</a>
+        <a href="payment-fr.html">FR</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <h1>EGD2026 — الدفع | التذاكر والرعاية</h1>
+    <p class="sub">اضغط على "ادفع الآن" أو امسح رمز QR للدفع مباشرة.</p>
+    <div class="grid" id="tiers"></div>
+  </div>
+
+  <footer>
+    <p><strong>EGD2026</strong> · Elmahrosa Global Day · <a href="https://elmahrosa.org">elmahrosa.org</a> · <a href="mailto:ayman@elmahrosa.org">ayman@elmahrosa.org</a></p>
+  </footer>
+
+  <script>
+    const tiers = [
+      { key:"standard",   name:"التذكرة العادية",       price:"$25",     link:"https://dodo.pe/egd2026-standard-ticket-6052720" },
+      { key:"pro",        name:"تذكرة المحترف",    price:"$75",     link:"https://dodo.pe/egd2026-pro-builder-ticket-6052721" },
+      { key:"bronze",     name:"الراعي البرونزي",        price:"$2,500",  link:"https://dodo.pe/egd2026-bronze-sponsor-6052722" },
+      { key:"silver",     name:"الراعي الفضي",  price:"$6,000",  link:"https://dodo.pe/egd2026-silver-track-sponsor-6052723" },
+      { key:"prize",      name:"الراعي لجائزة",   price:"$5,000",  link:"https://dodo.pe/egd2026-prize-purse-sponsor-6052724" },
+      { key:"gold",       name:"الشريك الذهبي للمدينة",     price:"$12,000", link:"https://dodo.pe/egd2026-gold-city-partner-6052725" },
+      { key:"presenting", name:"الشريك الرئيسي",    price:"$25,000", link:"https://dodo.pe/egd2026-presenting-partner-6052726" },
+    ];
+    const grid = document.getElementById("tiers");
+    tiers.forEach((t, i) => {
+      const qrUrl = "https://api.qrserver.com/v1/create-qr-code/?size=512x512&data=" + encodeURIComponent(t.link);
+      const id = "qr-" + i;
+      const card = document.createElement("div");
+      card.className = "tier " + t.key;
+      card.innerHTML = '<h3>' + t.name + '</h3><div class="price">' + t.price + '</div><div class="actions"><a class="btn pay" href="' + t.link + '" target="_blank" rel="noopener">ادفع الآن</a><button class="btn qr" onclick="toggleQR(\'' + id + '\')">أظهر QR</button></div><div id="' + id + '" class="qrbox"><img src="' + qrUrl + '" alt="' + t.name + ' QR" /><p>' + t.link + '</p></div>';
+      grid.appendChild(card);
+    });
+    function toggleQR(id){
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === "block" ? "none" : "block";
+    }
+    window.toggleQR = toggleQR;
+  </script>
+</body>
+</html>
